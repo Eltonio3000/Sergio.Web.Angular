@@ -1,0 +1,86 @@
+.painel-container {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.painel-container h2 {
+  margin: 0 0 4px 0;
+  color: #1f2937;
+  font-size: 1.5rem;
+}
+
+.subtitulo {
+  margin: 0 0 20px 0;
+  color: #6b7280;
+  font-size: 0.95rem;
+}
+
+.tabela-sensores {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid #e5e7eb;
+}
+
+.tabela-sensores thead {
+  background-color: #1f2937;
+  color: #ffffff;
+}
+
+.tabela-sensores th,
+.tabela-sensores td {
+  padding: 12px 16px;
+  text-align: left;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.tabela-sensores th {
+  font-weight: 600;
+  font-size: 0.9rem;
+  letter-spacing: 0.03em;
+}
+
+/* Linhas alternadas (Zebra) */
+.tabela-sensores tbody tr:nth-child(even) {
+  background-color: #f9fafb;
+}
+
+.tabela-sensores tbody tr:hover {
+  background-color: #f3f4f6;
+  transition: background-color 0.2s ease;
+}
+
+/* Estilo base para os distintivos (badges) */
+.badge {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 9999px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  background-color: #e5e7eb;
+  color: #374151;
+}
+
+/* Variações de cores para os status (caso utilize classes dinâmicas como [ngClass]) */
+.badge.normal,
+.badge.ideal {
+  background-color: #d1fae5;
+  color: #065f46;
+}
+
+.badge.alerta,
+.badge.atencao {
+  background-color: #fef3c7;
+  color: #92400e;
+}
+
+.badge.critico,
+.badge.erro {
+  background-color: #fee2e2;
+  color: #991b1b;
+}
