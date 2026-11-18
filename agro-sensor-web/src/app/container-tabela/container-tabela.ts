@@ -1,9 +1,12 @@
 import { Component , OnInit } from '@angular/core';
 import { LeituraSolo } from '../interfaces/leitura-solo.interface';
+import { CommonModule } from '@angular/common';
+
 @Component({
   selector: 'app-container-tabela',
-  templateUrl: './container-tabela.component.html',
-  styleUrls: ['./container-tabela.component.css']
+  imports: [CommonModule],
+  templateUrl: './container-tabela.html',
+  styleUrls: ['./container-tabela.css']
 })
 export class ContainerTabela implements OnInit {
   titulo: string = 'Painel de Monitoramento IoT - Sensores de Solo';

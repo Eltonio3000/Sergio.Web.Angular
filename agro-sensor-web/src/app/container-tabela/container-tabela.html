@@ -11,13 +11,13 @@
   </thead>
     <tbody>
       <tr *ngFor="let s of leituras; let i = index">
-        <td>{{i + 1}}</td>
-        <td>{{s . data}}</td>
-        <td>{{s . n}}</td>
-        <td>{{s . p}}</td>
-        <td>{{s . k}}</td>
-        <td>{{s . umidade * 100}}%</td>
-        <td><span class="badge" [ngClass]="s.status.toLowerCase()">{{s . status}}</span></td>
+        <td>{{i+1}}</td>
+        <td>{{s.data}}</td>
+        <td>{{s.n}}</td>
+        <td>{{s.p}}</td>
+        <td>{{s.k}}</td>
+        <td>{{s.umidade * 100}}%</td>
+        <td><span class="badge" [ngClass]="(s.status || '').toLowerCase()">{{s.status}}</span></td>
       </tr>
     </tbody>
   </table>
